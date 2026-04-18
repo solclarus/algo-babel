@@ -27,6 +27,7 @@ make
 ## Usage
 
 ```sh
+make list          # List all available algorithms
 make <lang>        # e.g. make c
 make <lang>/<algo> # e.g. make c/fizzbuzz
 ```
