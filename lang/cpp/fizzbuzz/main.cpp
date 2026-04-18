@@ -1,8 +1,8 @@
 #include <iostream>
-#include <cstdlib>
 
-int main(int argc, char *argv[]) {
-    int n = (argc > 1) ? std::atoi(argv[1]) : 100;
+int main() {
+    int n;
+    if (!(std::cin >> n)) n = 100;
 
     for (int i = 1; i <= n; i++) {
         if (i % 15 == 0) {

@@ -1,4 +1,5 @@
-const n = process.argv[2] ? parseInt(process.argv[2]) : 100;
+const lines = require('fs').readFileSync(0, 'utf8').trim().split('\n');
+const n = lines[0] ? parseInt(lines[0]) : 100;
 
 for (let i = 1; i <= n; i++) {
   if (i % 15 === 0) {

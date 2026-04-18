@@ -1,6 +1,7 @@
 import sys
 
-n = int(sys.argv[1]) if len(sys.argv) > 1 else 100
+line = sys.stdin.readline().strip()
+n = int(line) if line else 100
 
 for i in range(1, n + 1):
     if i % 15 == 0:
