@@ -13,21 +13,17 @@ Install [Docker](https://docs.docker.com/get-docker/).
 git clone https://github.com/solclarus/algo-babel.git
 cd algo-babel
 
-# 2. Build Docker image (run once)
-make docker-build
-
-# 3. Run
-make helloworld
+# 2. Build Docker image
+make docker
+make
 ```
 
 ## Usage
 
 ```bash
-make <lang>           # Run all algorithms in a language
-make <lang>/<algo>    # Run a specific algorithm
+make <lang>        # e.g. make c
+make <lang>/<algo> # e.g. make c/fizzbuzz
 ```
-
-**Languages:** `c`, `cpp`, `py`, `js`
 
 ## Structure
 
